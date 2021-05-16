@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-boy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 70vw;
+    margin: 15vh auto 0;
+
+    background: #8f8d8d;
+    border-radius: .5vw .5vw 5vw .5vw;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    border-bottom: 1px solid #000;
+}
+
+.power {
+    width: 42vw;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+
+}
+
+.screen-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 42vw;
+    height: auto;
+    margin-top: 2vw;
+
+    background: #333;
+    border-radius: 1vw 1vw 5vw 1vw;
+}
+
+.decorator {
+    width: 30%;
+    height: .5em;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid red;
+}
+
+.screen-text {
+    width: 40%;
+    height: 1em;
+
+    font-size: .5em;
+}
+
+.screen {
+    width: 25vw;
+    height: 25vw;
+    margin: .5em auto 1em;
+
+    background: green;
+}
+
+.brand {
+    width: 85%;
+
+    font-size: .8em;
+    text-align: left;
+}
+
+.controllers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cross-axis {
+    width: 15vw;
+    height: 15vw;
+
+    background: #333;
+    border-radius: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+
+    width: 17vw;
+    height: 8vw;
+    padding: 0 .5em;
+    margin-top: 1em;
+    transform: rotate(-35deg);
+
+    background: rgb(138, 110, 110);
+    border-radius: 5em;
+}
+
+.button {
+    width: 7vw;
+    height: 7vw;
+
+    background: red;
+    border-radius: 100%;
+}
