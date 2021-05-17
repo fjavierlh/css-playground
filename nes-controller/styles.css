@@ -1,64 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
+
     background: rgb(0, 0, 0);
+    font-family: 'Press Start 2P';
 }
 
+/*
+    General layout
+*/
 .controller {
-    background: #d3d4d4;
-    width: 90vw;
-    height: 40vw;
-    border-radius: 1vw;
-
-    margin: 25vh auto 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 99vw;
+    height: 43vw;
+    margin:  auto 0;
+    
+    background: #d3d4d4;
+    border-radius: 1vw;
+}
+
+.cable-detail {
+    width: 3vw;
+    height: 1vw;
+    margin-left: -50vw;
+
+    background: rgb(165, 165, 165);
 }
 
 .layout {
-    background: #030303;
-    width: 95%;
-    height: 80%;
-    margin-bottom: 3vw;
-
     display: flex;
     flex-flow: row wrap;
-
     justify-content: space-evenly;
     align-items: flex-end;
+
+    width: 93%;
+    height: 78%;
+    margin-bottom: 3%;
+
+    background: #030303;
 }
 
+/*
+    Left controller content
+*/
 .left {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
+
 .cross-axis, .cross-axis-border {
-    width: 18vw;
-    height: 18vw;
-    margin-bottom: 7vw;
+    width: 16vw;
+    height: 16vw;
+    margin-bottom: 25%;
 }
 
 .cross-axis-border {
-    width: 19vw;
+    width: 20%;
     height: 19vw;
     margin-bottom: -100%;
 }
 
 .axis {
-    display: block;
-    background: rgb(42, 42, 42);
-    width: 28%;
-    height: 100%;
-    margin: 0 auto;
-
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-       
-    border-radius: .2em;
+
+    width: 32%;
+    height: 100%;
+    margin: 0 auto;
+    
+    background: rgb(42, 42, 42);
+    border-radius: .5vw;
 }
 
 .y {
@@ -109,6 +127,9 @@ body {
 
 }
 
+/*
+    Center controller content
+*/
 .center {
     display: flex;
     flex-direction: column;
@@ -121,9 +142,9 @@ body {
 .separator {
     background: rgb(165, 165, 165);
     width: 100%;
-    height: 12%;
+    height: 14%;
 
-    border-radius: .5em;
+    border-radius: 1vw;
 }
 
 .separator-first {
@@ -142,50 +163,75 @@ body {
 
 .start-select {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: rgb(218, 218, 218);
     height: 25%;
+}
 
+.start-select-border {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 97%;
+    height: 90%;
     
-}
-.text-button {
-    font-family: 'Press Start 2P';
-    color: #C1121C;
-    width: 40%;
-    font-size: 2vw;
-    text-align: center;
-}
-.button {
-    background: #000 ;
-    width: 40%;
-    height: 2vw;
+    background: rgb(190, 190, 190);
     border-radius: 1vw;
 }
+.text-button {
+    color: #C1121C;
+    width: 40%;
+    font-size: 1.7vw;
+    text-align: center;
+}
 
+.button {
+    background: rgb(109, 109, 109) ;
+    width: 35%;
+    height: 4vw;
+    border-radius: 2vw;
+}
 
-.right-content {
+/*
+    Right controller content
+*/
+.right {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
 
     width: 26vw;
-    height: 26vw;
+    height: 32vw;
 }
 
 .brand{
-    font-family: 'Press Start 2P';
+    display: flex;
+    width: 100%;
+
+    font-size: 2vw;
     color: #C1121C;
+}
+
+.brand span {
+    font-size: 1.5vw;
+    margin-top: -1vw;
 }
 
 .square {
     display: flex;
     justify-content: center;
     align-items:  center;
+
     width: 10vw;
     height: 10vw;
+    margin-right: 2vw;
+    margin-bottom: -7vw;
 
     background: #d3d4d4;
+    border-radius: .5vw;
 }
 
 .circle {
@@ -194,4 +240,15 @@ body {
 
     background: #C1121C;
     border-radius: 100%;
+}
+
+.letter {
+    width: 10vw;
+    height: 3vw;
+    margin-right: 2vw;
+    margin-bottom: .5vw;
+
+    font-size: 2.5vw;
+    color: #C1121C;
+    text-align: right;
 }
