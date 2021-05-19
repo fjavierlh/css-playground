@@ -1,17 +1,19 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
 }
 
 .game-boy {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 50vw;
-    height: 70vw;
-    margin: 15vh auto 0;
+    width: 60vh;
+    height: 90vh;
+    margin: 5vh auto 0;
 
-    background: #8f8d8d;
-    border-radius: .5vw .5vw 5vw .5vw;
+    background: #d9cfd7;
+    border-radius: 1vh 1vh 10vh 1vh;
 }
 
 .top {
@@ -23,7 +25,7 @@ body {
 }
 
 .power {
-    width: 42vw;
+    width: 42vh;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
 
@@ -32,33 +34,66 @@ body {
 .screen-layout {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 42vw;
+    justify-content: flex-start;
+    width: 52vh;
     height: auto;
-    margin-top: 2vw;
+    padding: 1.5vh;
 
-    background: #333;
+    background: #727388;
     border-radius: 1vw 1vw 5vw 1vw;
 }
 
 .decorator {
-    width: 30%;
-    height: .5em;
-    border-top: 1px solid blue;
-    border-bottom: 1px solid red;
+    height: 1vh;
+
+    border-top: .3vh solid blue;
+    border-bottom: .3vh solid red;
+}
+
+.decorator-left {
+    width: 28%;
+}
+
+.decorator-right {
+    width: 18% ;
 }
 
 .screen-text {
-    width: 40%;
-    height: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;  
+    width: 50%;
+    margin: 0 2%;
 
-    font-size: .5em;
+    font-size: 1.5vh;
+    color: #fff;
+    text-align: center;
+}
+
+.battery {
+    width: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 1.5vh;
+}
+
+.dot {
+    width: 1vh;
+    height: 1vh;
+    margin-bottom: 1vh;
+
+    background: red;
+    border-radius: 100%;
 }
 
 .screen {
-    width: 25vw;
-    height: 25vw;
-    margin: .5em auto 1em;
+    width: 30vh;
+    height: 30vh;
+    margin: 1vh 0 1vh 6vh;
 
     background: green;
 }
@@ -72,13 +107,18 @@ body {
 
 .controllers {
     display: flex;
+    flex-flow: row wrap;
+
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    margin-top: 5vh;
 }
 
 .cross-axis {
-    width: 15vw;
-    height: 15vw;
+    width: 15vh;
+    height: 15vh;
+    margin-left: 5vh;
 
     background: #333;
     border-radius: 100%;
@@ -90,20 +130,91 @@ body {
     justify-content: space-between;
     align-content: center;
 
-    width: 17vw;
-    height: 8vw;
-    padding: 0 .5em;
+    width: 17vh;
+    height: 8vh;
+    padding: .2vh .6vh;
+    margin-right: 5vh;
     margin-top: 1em;
-    transform: rotate(-35deg);
+    transform: rotate(-25deg);
 
-    background: rgb(138, 110, 110);
+    background: linear-gradient(0deg, #d9cfd7, #bab1b2);
     border-radius: 5em;
 }
 
 .button {
-    width: 7vw;
-    height: 7vw;
+    width: 7vh;
+    height: 7vh;
 
-    background: red;
+    background: #630314;
     border-radius: 100%;
+}
+
+.select-start {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 20vh;
+    height: 3vh;
+
+}
+
+.select, .start {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    width: 8vh;
+    
+    
+    transform: rotate(-25deg);
+    font-size: 2vh;
+}
+
+
+.button-sm {
+    width: 75%;
+    height: 1.5vh;
+    margin:0 auto .8vh;
+    
+    background: #333;
+    border-radius: 5vh;
+}
+
+.start  span, .select span {
+    margin: 0 auto;
+
+    font-size: 1.5vh;
+}
+
+.bottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+
+    width: 100%;
+
+}
+
+.phones {
+    width: 10vh;
+}
+
+.speaker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 16vh;
+    height: 10vh;
+    margin-right: 3vh;
+    transform: rotate(-30deg);
+}
+
+.groove {
+    width: 1vh;
+    height: 100%;
+
+    background: #000;
+    border-radius: 5vh;
 }
